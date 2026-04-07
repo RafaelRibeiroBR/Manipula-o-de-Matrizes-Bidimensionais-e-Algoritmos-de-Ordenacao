@@ -8,9 +8,13 @@ Ela possui métodos para: preencher manual ou automaticamente, exibir a matriz e
 Lógica utilizada
 
 Preenchimento manual: percorre cada posição e pede um valor ao usuário.
+
 Preenchimento automático: gera valores aleatórios usando Random.
+
 Exibição: imprime a matriz linha por linha.
+
 Ordenação por linha/coluna: aplica Bubble Sort em cada linha ou coluna.
+
 Ordenação completa: achata a matriz em um vetor, aplica Merge Sort recursivo e reconstrua a matriz.
 
 Comparação dos algoritmos
