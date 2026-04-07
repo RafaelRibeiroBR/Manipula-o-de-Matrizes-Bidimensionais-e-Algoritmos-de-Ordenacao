@@ -19,7 +19,8 @@ Ordenação completa: achata a matriz em um vetor, aplica Merge Sort recursivo e
 
 Comparação dos algoritmos
 
-Bubble Sort: iterativo, simples, funciona bem para matriz pequena ou quase ordenada, mas lento para matriz grande (O(n²)).
+Bubble Sort: iterativo, simples, funciona bem para matriz pequena ou quase ordenada, mas lento para matriz grande (O(n²)). 
+
 Merge Sort: recursivo, eficiente para matriz grande (O(n log n)), ordena todos os elementos de uma vez.
 
 Conclusão
