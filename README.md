@@ -2,15 +2,15 @@ Relatório Final
 
 Descrição da classe Matriz
 
-A classe `Matriz` é responsável por representar uma matriz bidimensional de inteiros. Ela possui três atributos principais: `matriz`, que guarda os elementos; `linhas`, que define a quantidade de linhas; e `colunas`, que define a quantidade de colunas.
+A classe Matriz é responsável por representar uma matriz bidimensional de inteiros. Ela possui três atributos principais: matriz, que guarda os elementos; linhas, que define a quantidade de linhas; e colunas, que define a quantidade de colunas.
 Para manipular essa matriz, criamos métodos que permitem preenchê-la manualmente ou automaticamente, exibir seus valores, e ordená-la de diferentes formas: por linha, por coluna ou totalmente. O objetivo é organizar e manipular os dados de maneira clara e eficiente.
 
 
 
- Lógica utilizada em cada funcionalidade
+Lógica utilizada em cada funcionalidade
 
-Preenchimento manual: usamos dois loops `for` para percorrer todas as posições da matriz e pedimos ao usuário que digite cada valor.
-Preenchimento automático: também percorremos todas as posições da matriz, mas os valores são gerados aleatoriamente usando a classe `Random`.
+Preenchimento manual: usamos dois loops for para percorrer todas as posições da matriz e pedimos ao usuário que digite cada valor.
+Preenchimento automático: também percorremos todas as posições da matriz, mas os valores são gerados aleatoriamente usando a classe Random.
 Exibição da matriz: percorremos a matriz e imprimimos os elementos linha por linha, para que a visualização fique organizada.
 Ordenação por linhas: aplicamos o Bubble Sort em cada linha, ordenando os elementos horizontalmente.
 Ordenação por colunas: extraímos cada coluna para um vetor temporário, ordenamos com Bubble Sort e devolvemos para a matriz.
