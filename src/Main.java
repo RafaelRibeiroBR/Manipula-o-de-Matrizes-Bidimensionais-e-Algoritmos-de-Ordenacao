@@ -1,32 +1,41 @@
 import java.util.Scanner;
 
-public class Principal {
+public class Main {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        Scanner scan = new Scanner(System.in);
 
-        System.out.print("Digite linhas: ");
-        int l = sc.nextInt();
+        System.out.println("Quantas linhas: ");
+        int linhas = scan.nextInt();
+        System.out.println("Quantas colunas: ");
+        int colunas = scan.nextInt();
 
-        System.out.print("Digite colunas: ");
-        int c = sc.nextInt();
+        Matriz matriz = new Matriz(linhas, colunas);
+        System.out.println("1 para manual | 2 para automático");
+        int operacao = scan.nextInt();
 
-        Matriz m = new Matriz(l, c);
+        if (operacao == 1) {
+            matriz.preencherManual(scan);
+        } else {
+            matriz.preencherAutomatico();
+        }
 
-        m.preencherAutomatico();
-
+        // matriz original
         System.out.println("\nMatriz original:");
-        m.exibir();
+        matriz.exibir();
 
-        System.out.println("\nOrdenado por linhas:");
-        m.ordenarLinhas();
-        m.exibir();
+        // Ordenar por linhas
+        matriz.ordenarLinhas();
+        System.out.println("\nMatriz ordenada por linhas:");
+        matriz.exibir();
 
-        System.out.println("\nOrdenado por colunas:");
-        m.ordenarColunas();
-        m.exibir();
+        // Ordenar por colunas
+        matriz.ordenarColunas();
+        System.out.println("\nMatriz ordenada por colunas:");
+        matriz.exibir();
 
-        System.out.println("\nOrdenado completo (Merge Sort):");
-        m.ordenarMatrizCompleta();
-        m.exibir();
+        // Ordenar toda a matriz
+        matriz.ordenarCompleta();
+        System.out.println("\nMatriz completamente ordenada:");
+        matriz.exibir();
     }
 }
